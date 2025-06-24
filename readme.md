@@ -1,7 +1,7 @@
 
+# symfony 6.4 + rabbitmq + docker
 
-
-# Uruchamianie
+### Uruchamianie
 
 ```bash
 docker compose up
@@ -14,7 +14,7 @@ php bin/console doctrine:fixtures:load
 ```
 
 
-# Api Get token
+### Api Get token
 
 request:
 
@@ -24,13 +24,13 @@ response:
 
 {'token': 'sdsd4545...}
 
-# Api fetch data
+### Api fetch data
 
 GET localhost/api/product      --> with token bearer 'sdsd4545...'
 POST localhost/api/product  {'name':'maslo','price':'44.5'}     --> with token bearer 'sdsd4545...'
 
 
-# Messenger - start
+### Messenger - start
 
 // rabbitmq panel   haslo/login kalo
 127.0.0.1:15672
